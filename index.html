@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Step Navigator | 自分の次の一手を選べる学習支援</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark">NS</span>
+          <div>
+            <p class="brand-title">Next Step Navigator</p>
+            <p class="brand-subtitle">学習の“次の一手”を自分で選べる</p>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <a href="#features">特徴</a>
+          <a href="#roadmap">ロードマップ</a>
+          <a href="#flow">利用の流れ</a>
+          <a class="btn btn-outline" href="#cta">無料デモに参加</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">卒業制作で使える学習支援LP</p>
+            <h1>
+              「先生の指示待ち」から卒業。<br />
+              自分の現在地を把握し、次の一手を選ぶ。
+            </h1>
+            <p class="lead">
+              Next Step Navigatorは、分岐するスキルロードマップと実践課題で、
+              “何をすればいいかわからない”を解消するプログラミング学習支援Webアプリです。
+              学生の行動履歴を可視化し、判断材料を提示しながら、最後の選択は学習者自身が行う設計。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cta">デモを体験する</a>
+              <a class="btn btn-ghost" href="#insights">今の課題感を読む</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <strong>80+</strong>
+                <span>課題テンプレ</span>
+              </div>
+              <div>
+                <strong>6</strong>
+                <span>ロードマップ系統</span>
+              </div>
+              <div>
+                <strong>3min</strong>
+                <span>現在地チェック</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card">
+              <div class="card-header">
+                <p>現在地サマリー</p>
+                <span class="status">Week 3 / 6</span>
+              </div>
+              <h3>API設計とデータ永続化の分岐点</h3>
+              <p>
+                直近の学習ログから、REST API設計を優先すると進度が加速。
+                ただしUI改善も同時に進めると全体の完成度が上がります。
+              </p>
+              <div class="card-grid">
+                <div>
+                  <span>次の一手A</span>
+                  <strong>API設計を整理</strong>
+                </div>
+                <div>
+                  <span>次の一手B</span>
+                  <strong>UI要件を精査</strong>
+                </div>
+              </div>
+              <button class="btn btn-primary">どちらから始めるか選ぶ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="insights">
+        <div class="container">
+          <h2>停滞の原因は「判断材料の不足」</h2>
+          <p>
+            課題はこなせるのに、次のステップが見えない。これは“スキルの欠如”ではなく、
+            「現在地の理解」と「選択肢の比較」が難しいことが原因です。Next Step Navigatorは
+            学習ログ・成果物・時間配分から判断材料を提示し、迷いを減らします。
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>学習者主体で進められる3つの仕組み</h2>
+          <div class="feature-grid">
+            <article>
+              <h3>分岐するスキルロードマップ</h3>
+              <p>
+                バックエンド / フロントエンド / UI設計など、複数の枝分かれを持つロードマップ。
+                学習者は「いまの優先順位」を自分で選べます。
+              </p>
+            </article>
+            <article>
+              <h3>実践課題 + 行動ログの連動</h3>
+              <p>
+                課題の消化状況・Git履歴・稼働時間を可視化し、客観的な現在地を提示。
+                行動履歴から次に挑戦する課題を提案します。
+              </p>
+            </article>
+            <article>
+              <h3>判断材料を並べて比較</h3>
+              <p>
+                「スピード重視」「完成度重視」など目的別にメリットを整理。
+                学生自身が納得して次の一歩を選べるように設計しています。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="roadmap">
+        <div class="container">
+          <h2>分岐型ロードマップの例</h2>
+          <div class="roadmap-grid">
+            <div class="roadmap-card">
+              <h3>基礎スキル</h3>
+              <ul>
+                <li>HTML/CSSの理解</li>
+                <li>JavaScript基礎</li>
+                <li>Git/GitHubの運用</li>
+              </ul>
+            </div>
+            <div class="roadmap-card">
+              <h3>実装フェーズ</h3>
+              <ul>
+                <li>API設計とデータモデル</li>
+                <li>UIフロー設計</li>
+                <li>テストと品質改善</li>
+              </ul>
+            </div>
+            <div class="roadmap-card">
+              <h3>成果物強化</h3>
+              <ul>
+                <li>ユーザーストーリー整理</li>
+                <li>ポートフォリオ資料作成</li>
+                <li>発表準備</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="flow">
+        <div class="container">
+          <h2>利用の流れ</h2>
+          <ol class="flow-list">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>現在地チェック</h3>
+                <p>3分の質問と学習ログ連携で、現在の進捗を可視化します。</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>分岐ポイントを提示</h3>
+                <p>目的別の選択肢を提示し、それぞれのメリットとリスクを整理します。</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>次の一手を自分で決定</h3>
+                <p>最終判断は学習者が行い、意思決定の理由を記録できます。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="cta" class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>卒業制作を止めないための“学習OS”を体験</h2>
+            <p>
+              学校の課題が終わったあと、何をするか迷わない。
+              自分で選ぶ力を育てる学習支援のプロトタイプを公開中です。
+            </p>
+          </div>
+          <form class="cta-form">
+            <label>
+              学校メールアドレス
+              <input type="email" placeholder="student@example.com" />
+            </label>
+            <button class="btn btn-primary" type="submit">無料デモに参加</button>
+            <p class="form-note">※実際の送信は行われません。</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2024 Next Step Navigator</p>
+        <div class="footer-links">
+          <a href="#features">特徴</a>
+          <a href="#roadmap">ロードマップ</a>
+          <a href="#flow">利用の流れ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
